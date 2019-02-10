@@ -24,8 +24,8 @@ def get_current_ip(record, type):
     pass
 
 
-def delete_record(record, type):
-    """Delete the given record from Dreamhost's servers."""
+def remove_record(record, type):
+    """Remove the given record from Dreamhost's servers."""
     pass
 
 
@@ -34,7 +34,7 @@ def add_record(record, type, ip):
     pass
 
 
-def remove_record(record, type, ip):
+def update_record(record, type, ip):
     """Update the given DNS record on Dreamhost's servers with the new IP.
 
     If the record already exists, delete the record, and then re-add the record with the new IP.
