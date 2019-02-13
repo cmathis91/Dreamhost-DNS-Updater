@@ -12,7 +12,7 @@ To run the script, edit *config.json* with the necessary information:
 
 | Key | Value |
 | ------ | ------ |
-| api_key | Generate a Dreamhost API key: https://panel.dreamhost.com/?tree=home.api |
+| api_key | The Dreamhost API key (https://panel.dreamhost.com/?tree=home.api) |
 | record | The record you want to update |
 | type | The type of record (A, MX, CNAME, TXT, etc.) |
 | value | The value (IP) you want to update the record to. Use "public_ip" if you want the record updated to the latest public IP.|
