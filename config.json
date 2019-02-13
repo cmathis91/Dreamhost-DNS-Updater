@@ -1,0 +1,6 @@
+{
+  "api_key": "abc123",
+  "record": "subdomain.example.com",
+  "type": "A",
+  "value": "public ip"
+}
