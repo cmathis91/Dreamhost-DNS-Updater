@@ -13,11 +13,18 @@ def load_config_file(filename):
     """Return dictionary of parameters from config file."""
     try:
         fp = open(filename)
+    except IOError:
+        print("Error opening file " + filename)
+        raise
+
+    try:
         params = json.load(fp)
-        fp.close()
         return params
-    except (IOError, OSError, ValueError) as e:
-        raise IOError("Error loading config file: " + str(e))
+    except ValueError:
+        print("Config file malformed.")
+        raise
+    finally:
+        fp.close()
 
 
 def get_public_ip():
